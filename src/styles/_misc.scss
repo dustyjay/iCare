@@ -1,0 +1,41 @@
+.section {
+  max-width: 1156px;
+  padding: 0;
+  margin: 0 auto;
+  &__inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.body {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  &::after {
+    content: "";
+    background-image: url(../assets/images/doughnut-big.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    top: 0%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    height: 250px;
+    background-position-x: -10%;
+  }
+  &::before {
+    content: "";
+    background-image: url(../assets/images/banner.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: 0%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    height: 1100px;
+    background-position-x: 0%;
+  }
+}

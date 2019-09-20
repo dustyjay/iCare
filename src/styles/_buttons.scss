@@ -1,0 +1,11 @@
+.btn {
+  padding: 1rem 3rem;
+  &__primary {
+    background: $primary;
+    color: white;
+    transition: all 200ms;
+    &:hover {
+      background: darken($color: $primary, $amount: 10);
+    }
+  }
+}

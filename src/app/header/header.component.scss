@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+
+.navbar {
+  background-color: transparent;
+  color: $text-color;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  &-toggle {
+    background-color: $text-color;
+    &:focus {
+      background-color: $primary;
+    }
+  }
+  &-collapse {
+    border-color: transparent;
+  }
+  li {
+    margin-right: 1rem;
+  }
+}
+
+li > a {
+  color: $text-color;
+  &:hover {
+    opacity: 0.6;
+    background-color: inherit;
+    color: inherit;
+  }
+  &:focus {
+    background-color: inherit;
+    color: inherit;
+  }
+}
+
+a {
+  color: $text-color;
+  text-transform: uppercase;
+  transition: all 300ms;
+  border-bottom: 1px solid transparent;
+}
+
+.active {
+  border-bottom: 1px solid $primary;
+}

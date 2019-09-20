@@ -1,0 +1,31 @@
+footer {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: transparent;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0;
+}
+.footer {
+  &__sm {
+    @media screen and (min-width: 768px) and (max-width: 968px) {
+      margin-top: 1.5rem;
+    }
+  }
+}
+li {
+  margin-bottom: 2rem;
+  a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #333;
+  }
+}
+
+a {
+  color: #333;
+}

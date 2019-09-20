@@ -1,0 +1,179 @@
+@import "../../styles/variables";
+
+.banner {
+  min-height: 300px;
+  margin-bottom: 250px;
+  display: flex;
+  align-items: center;
+  &-image {
+    margin: 0;
+    width: 100%;
+    &::before {
+      content: "";
+      background-image: url(../../assets/images/ellipse-big.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      top: 10%;
+      position: absolute;
+      z-index: -1;
+      height: 520px;
+      background-position-x: 100%;
+      max-width: 1156px;
+    }
+    &::after {
+      content: "";
+      background-image: url(../../assets/images/about-woman.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      top: 8%;
+      position: absolute;
+      z-index: -1;
+      height: 530px;
+      background-position-x: 100%;
+      max-width: 1156px;
+    }
+  }
+
+  &__row {
+    max-width: 50rem;
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  &__email {
+    padding: 10px;
+    background-color: $white;
+    border: none;
+    border-left: 2px solid $primary;
+    text-align: center;
+  }
+  &__input {
+    input {
+      @extend .banner__email;
+      text-align: left !important;
+      border-color: rgba($color: #ccc, $alpha: 0.5);
+      border-radius: 0;
+      width: 100%;
+    }
+    padding: 0;
+  }
+  &__btn {
+    padding: 0;
+    button {
+      width: 100%;
+      padding: 8.5px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 1rem;
+    }
+  }
+}
+
+h5 {
+  line-height: 2.5rem;
+}
+
+.home {
+  &__row {
+    @extend .banner__row;
+    margin: 0 auto;
+    max-width: 50rem;
+  }
+  h5 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  &--md {
+    max-width: 45rem;
+  }
+  &--lg {
+    max-width: 65rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  &__image {
+    width: 28px;
+  }
+  &__text {
+    &--left {
+      padding-bottom: 2rem;
+      text-align: center;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+    }
+    &--right {
+      padding-bottom: 2rem;
+      text-align: right;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+    }
+  }
+  &__picture {
+    max-width: 40rem;
+    @media screen and (max-width: 768px) {
+      max-width: 30rem;
+    }
+  }
+  &__triangle1 {
+    margin-bottom: 80px;
+    &::before {
+      content: "";
+      background-image: url(../../assets/images/triangle1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 50px;
+      top: 900px;
+      position: absolute;
+      left: 5%;
+      z-index: -1;
+      height: 60px;
+      background-position-x: 100%;
+    }
+  }
+  &__triangle2 {
+    &::before {
+      content: "";
+      background-image: url(../../assets/images/triangle2.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100px;
+      top: 970px;
+      position: absolute;
+      right: 10%;
+      z-index: -1;
+      height: 100px;
+      background-position-x: 100%;
+    }
+  }
+  &__hr {
+    position: relative;
+    min-height: 40px;
+    margin-top: 50px;
+    &::before {
+      content: "";
+      background-image: url(../../assets/images/doughnut.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 40px;
+      top: -20px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto;
+      z-index: 1;
+      height: 40px;
+      background-position-x: 100%;
+    }
+    hr {
+      border-top: 1px solid #f9f9fb;
+    }
+  }
+}
