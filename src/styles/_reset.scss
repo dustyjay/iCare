@@ -7,6 +7,10 @@ body {
   font-family: Poppins;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input,
 textarea {
   border: 1px solid $accent-light;
