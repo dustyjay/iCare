@@ -5,34 +5,42 @@
   margin-bottom: 250px;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 50px;
+    min-height: 100px;
+  }
   &-image {
     margin: 0;
     width: 100%;
     &::before {
-      content: "";
-      background-image: url(../../assets/images/ellipse-big.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 100%;
-      top: 10%;
-      position: absolute;
-      z-index: -1;
-      height: 520px;
-      background-position-x: 100%;
-      max-width: 1156px;
+      @media screen and (min-width: 768px) {
+        content: "";
+        background-image: url(../../assets/images/ellipse-big.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        top: 10%;
+        position: absolute;
+        z-index: -1;
+        height: 520px;
+        background-position-x: 100%;
+        max-width: 1156px;
+      }
     }
     &::after {
-      content: "";
-      background-image: url(../../assets/images/about-woman.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 100%;
-      top: 8%;
-      position: absolute;
-      z-index: -1;
-      height: 530px;
-      background-position-x: 100%;
-      max-width: 1156px;
+      @media screen and (min-width: 768px) {
+        content: "";
+        background-image: url(../../assets/images/about-woman.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        top: 8%;
+        position: absolute;
+        z-index: -1;
+        height: 530px;
+        background-position-x: 100%;
+        max-width: 1156px;
+      }
     }
   }
 

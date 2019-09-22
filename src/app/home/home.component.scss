@@ -5,32 +5,40 @@
   margin-bottom: 150px;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 50px;
+    min-height: 100px;
+  }
   &-image {
     &::before {
-      content: "";
-      background-image: url(../../assets/images/triangle-big.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 100%;
-      top: 1%;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      height: 800px;
-      background-position-x: 100%;
+      @media screen and (min-width: 768px) {
+        content: "";
+        background-image: url(../../assets/images/triangle-big.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        top: 1%;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        height: 800px;
+        background-position-x: 100%;
+      }
     }
     &::after {
-      content: "";
-      background-image: url(../../assets/images/banner-image.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 100%;
-      top: 3%;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      height: 800px;
-      background-position-x: 100%;
+      @media screen and (min-width: 768px) {
+        content: "";
+        background-image: url(../../assets/images/banner-image.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        top: 3%;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        height: 800px;
+        background-position-x: 100%;
+      }
     }
   }
 
@@ -38,6 +46,10 @@
     max-width: 50rem;
     margin: 0;
     margin-top: 2rem;
+    @media screen and (max-width: 768px) {
+      margin: 2rem auto;
+      max-width: 60rem;
+    }
   }
 
   &__email {
