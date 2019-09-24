@@ -7,14 +7,20 @@
         improve their knowledge in health and social care or they wish to change
         their career.
       </h5>
-      <form name="contactForm" method="POST" data-netlify="true">
+      <form
+        id="contactForm"
+        method="POST"
+        action="https://formspree.io/info@icare.ng"
+      >
         <div class="row banner__row">
           <div class="col-xs-2 banner__email">Email</div>
           <div class="col-xs-10 col-sm-6 banner__input">
-            <input type="email" name="email" />
+            <input type="email" name="Email" />
+            <input type="hidden" name="_next" value="https://icare.ng" />
+            <input type="hidden" name="_subject" value="Email Subscriptions" />
           </div>
           <div class="col-xs-12 col-sm-4 banner__btn">
-            <button class="btn btn__primary w-100">Submit</button>
+            <button type="submit" class="btn btn__primary w-100">Submit</button>
           </div>
         </div>
       </form>
@@ -46,15 +52,21 @@
 
 <section class="section home">
   <div class="row home--lg section__inner">
-    <form>
+    <form
+      id="careForm"
+      method="POST"
+      action="https://formspree.io/info@icare.ng"
+    >
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <label>Name</label>
-          <input type="text" placeholder="Name" />
+          <input type="text" name="Name" placeholder="Name" />
         </div>
         <div class="col-xs-12 col-sm-6">
           <label>Email</label>
-          <input type="text" placeholder="Email Address" />
+          <input type="Email" name="Email" placeholder="Email Address" />
+          <input type="hidden" name="_next" value="https://icare.ng" />
+          <input type="hidden" name="_subject" value="Applicants for care" />
         </div>
         <div class="col-xs-12 text-center btn--box">
           <button type="submit" class="btn btn__primary w-100">Register</button>
@@ -90,15 +102,25 @@
         world. Our courses are available for as low as N30,000 each, you can get
         a discount if you buy more than three courses at the same time.
       </h5>
-      <form>
+      <form
+        id="trainingForm"
+        method="POST"
+        action="https://formspree.io/info@icare.ng"
+      >
         <div class="row">
           <div class="col-xs-12">
             <label>Name</label>
-            <input type="text" placeholder="Name" />
+            <input type="text" name="Name" placeholder="Name" />
           </div>
           <div class="col-xs-12">
             <label>Email</label>
-            <input type="text" placeholder="Email Address" />
+            <input type="text" name="Email" placeholder="Email Address" />
+            <input type="hidden" name="_next" value="https://icare.ng" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Applicants for training"
+            />
           </div>
           <div class="col-xs-12 btn--box">
             <button type="submit" class="btn btn__primary w-100">
@@ -144,24 +166,4 @@
   </div>
 </section>
 
-<section class="section home home--margin">
-  <div class="row home__triangle2 home--lg">
-    <h4>Sign Up to receive updates</h4>
-    <h5>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation
-    </h5>
-  </div>
-  <form name="contactForm" method="POST" data-netlify="true">
-    <div class="row banner__row">
-      <div class="col-xs-2 banner__email">Email</div>
-      <div class="col-xs-10 col-sm-6 banner__input">
-        <input type="email" name="email" />
-      </div>
-      <div class="col-xs-12 col-sm-4 banner__btn">
-        <button class="btn btn__primary w-100">Submit</button>
-      </div>
-    </div>
-  </form>
-</section>
+<app-subscription></app-subscription>
