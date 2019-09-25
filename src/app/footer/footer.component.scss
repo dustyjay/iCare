@@ -17,8 +17,10 @@ footer {
     }
   }
 }
+ul {
+  margin-bottom: 0;
+}
 li {
-  margin-bottom: 2rem;
   a {
     text-decoration: underline;
     text-transform: uppercase;

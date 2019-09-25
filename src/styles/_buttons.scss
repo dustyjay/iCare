@@ -2,19 +2,21 @@
   padding: 1rem 3rem;
   &__primary {
     background: $primary;
+    border: 1px solid $primary;
     color: white;
     transition: all 200ms;
     &:hover {
-      background: darken($color: $primary, $amount: 10);
+      background: white;
+      color: $primary;
     }
   }
   &__accent {
     background: white;
     border: 1px solid $primary;
-    color: $text-color;
+    color: $primary;
     transition: all 200ms;
     &:hover {
-      background: darken($color: $accent, $amount: 10);
+      background: $primary;
     }
   }
 }
