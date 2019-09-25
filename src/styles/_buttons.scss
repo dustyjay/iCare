@@ -8,4 +8,13 @@
       background: darken($color: $primary, $amount: 10);
     }
   }
+  &__accent {
+    background: white;
+    border: 1px solid $primary;
+    color: $text-color;
+    transition: all 200ms;
+    &:hover {
+      background: darken($color: $accent, $amount: 10);
+    }
+  }
 }

@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .banner {
   min-height: 500px;
@@ -12,7 +12,7 @@
   &-image {
     &::before {
       @media screen and (min-width: 768px) {
-        content: "";
+        content: '';
         background-image: url(../../assets/images/triangle-big.svg);
         background-size: contain;
         background-repeat: no-repeat;
@@ -27,7 +27,7 @@
     }
     &::after {
       @media screen and (min-width: 768px) {
-        content: "";
+        content: '';
         background-image: url(../../assets/images/banner-image.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -122,7 +122,7 @@ h5 {
   &__study {
     position: relative;
     &::before {
-      content: "";
+      content: '';
       background-image: url(../../assets/images/triangle-purple.svg);
       background-size: contain;
       background-repeat: no-repeat;
@@ -135,7 +135,7 @@ h5 {
       background-position-x: 100%;
     }
     &::after {
-      content: "";
+      content: '';
       background-image: url(../../assets/images/study-triangles.svg);
       background-size: contain;
       background-repeat: no-repeat;
@@ -179,7 +179,7 @@ h5 {
   }
   &__triangle1 {
     &::before {
-      content: "";
+      content: '';
       background-image: url(../../assets/images/triangle1.png);
       background-size: contain;
       background-repeat: no-repeat;
@@ -194,7 +194,7 @@ h5 {
   }
   &__triangle2 {
     &::before {
-      content: "";
+      content: '';
       background-image: url(../../assets/images/triangle2.svg);
       background-size: contain;
       background-repeat: no-repeat;
@@ -232,8 +232,13 @@ h5 {
   }
 }
 
-.btn--box {
-  margin-top: 1rem;
+.btn {
+  &--box {
+    margin-top: 1rem;
+  }
+  &--top {
+    margin-bottom: 1rem;
+  }
 }
 
 #careForm {
